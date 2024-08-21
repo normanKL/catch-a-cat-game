@@ -59,7 +59,6 @@ function playGame() {
         currentPosition = gridArray.findIndex((cell) => {
             return cell.classList.contains('active')
         })
-        // console.log(currentPosition)
         if (currentPosition >= 0) {
             gridArray[currentPosition].classList.remove('active')
         }
@@ -75,7 +74,7 @@ resetBtn.addEventListener('click', () => {
     clearInterval(intervalInt)
     score = 0
     lives = 3
-    gameOverEl.textContent = ''
+    gameOverEl.textContent = 'Good meow luck!'
     playGame()
 })
 
