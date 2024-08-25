@@ -61,3 +61,48 @@ html, body {
     margin: 15px 0px;
 }
 
+@media (max-width: 430px) {
+
+.grid-wrapper {
+    margin-right: 10px;
+
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.cell{
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgb(74, 72, 72);
+    background-color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-image: url('meow.png');
+    background-size: contain;
+}
+
+.resetBtn {
+    background-color: rgb(51, 51, 181);
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 15%;
+    font-size: 18px;
+}
+
+.game-over {
+    color: white;
+    margin: 15px 0px;
+    font-size: 30px;
+}
+
+}
