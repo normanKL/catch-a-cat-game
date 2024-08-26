@@ -65,7 +65,7 @@ function playGame() {
 
         const randomNumber = Math.floor(Math.random() * gridArray.length)
         gridArray[randomNumber].classList.add('active')
-    }, 1000);
+    }, 600);
 
 }
 
