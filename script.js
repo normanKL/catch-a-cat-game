@@ -65,7 +65,7 @@ function playGame() {
 
         const randomNumber = Math.floor(Math.random() * gridArray.length)
         gridArray[randomNumber].classList.add('active')
-    }, 600);
+    }, 800);
 
 }
 
@@ -73,7 +73,7 @@ function playGame() {
 resetBtn.addEventListener('click', () => {
     clearInterval(intervalInt)
     score = 0
-    lives = 3
+    lives = 5
     gameOverEl.textContent = 'Good meow luck!'
     playGame()
 })
