@@ -42,6 +42,11 @@ html, body {
     border: 2px solid white;
     border-radius: 15%;
 }
+.note {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
 
 .score-display {
    margin-bottom: 10px;
