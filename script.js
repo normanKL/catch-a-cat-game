@@ -8,7 +8,7 @@ const grid = width * width
 
 let intervalInt
 let score = 0
-let lives = 3
+let lives = 5
 let currentPosition
 const gridArray = []
 
@@ -65,7 +65,7 @@ function playGame() {
 
         const randomNumber = Math.floor(Math.random() * gridArray.length)
         gridArray[randomNumber].classList.add('active')
-    }, 800);
+    }, 900);
 
 }
 
