@@ -9,16 +9,19 @@ const grid = width * width
 let intervalInt
 let score = 0
 let lives = 5
+let isGameOver = false
 let currentPosition
 const gridArray = []
 
 function updateScore() {
+    if (isGameOver) return
     score = score + 1
     scoreEl.textContent = score
 
 }
 
 function updateLives() {
+    if (isGameOver) return
 
     if (lives > 1) {
         lives = lives - 1
@@ -28,10 +31,12 @@ function updateLives() {
         liveEl.textContent = lives
         clearInterval(intervalInt)
         gameOverEl.textContent = 'Game Over!'
+        isGameOver = true
     }
 }
 
 function displayGrid() {
+    gridArray.length = 0;
 
     for (let i = 0; i < grid; i++) {
         const cell = document.createElement('div')
@@ -74,6 +79,7 @@ resetBtn.addEventListener('click', () => {
     clearInterval(intervalInt)
     score = 0
     lives = 5
+    isGameOver = false
     gameOverEl.textContent = 'Good meow luck!'
     playGame()
 })
